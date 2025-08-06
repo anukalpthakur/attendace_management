@@ -12,7 +12,7 @@ def send_otp(email):
     otp = str(random.randint(100000, 999999))  # Generate 6-digit OTP
 
     sender_email = "snscollege845401@gmail.com"  # Replace with your email
-    sender_password = "pxfyilnmpoyzawzj"  # ✅ Use App Password
+    sender_password = "lnmpoyzawzj"  # ✅ Use App Password
 
     subject = "Your OTP for Face Recognition System"
     message = f"Your OTP is: {otp}\n\nThis OTP is valid for 1 minute."
@@ -99,3 +99,4 @@ if __name__ == "__main__":
     send_otp(email)  # ✅ Send OTP initially
     app = OTPVerificationApp(root, email)
     root.mainloop()
+
